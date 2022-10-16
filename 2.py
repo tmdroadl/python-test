@@ -9,7 +9,6 @@ class Cat(Animal):
     def cry(self):
         print('야옹')
 
-
 class Dog(Animal):
     def cry(self):
         print('왈왈')
