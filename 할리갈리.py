@@ -9,7 +9,7 @@ class Card:
     def __str__(self) -> str:
         return f"{self.kind} - {self.number}"
 class Deck:
-    def __init__(self, _deck = []) -> None:
+    def __init__(self, _deck) -> None:
 
         self.deck  : List[Card] = _deck
 
@@ -46,9 +46,9 @@ class Deck:
         return result
     def print(self):
         print(self.deck)
-card_list = Deck()
-player_open_deck = Deck()
-ai_open_deck = Deck()
+card_list = Deck([])
+player_open_deck = Deck([])
+ai_open_deck = Deck([])
 card_list.init_deck()
 player_deck, ai_deck = card_list.suffle_split_deck()
 turn = 0
