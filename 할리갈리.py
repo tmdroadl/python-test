@@ -1,5 +1,9 @@
 from time import sleep
+<<<<<<< HEAD
 from __future__ import annotationsx
+=======
+from __future__ import annotations
+>>>>>>> d8392c60f90cd0692175ef836d813cc337aefa23
 from typing import List
 import random
 import keyboard
@@ -123,4 +127,8 @@ while player_deck.is_not_empty() and ai_deck.is_not_empty():
             ai_open_deck.pop_all_and_append(player_deck)
             player_open_deck.pop_all_and_append(player_deck)
             if len(ai_deck) == 0:
+<<<<<<< HEAD
                 break
+=======
+                break
+>>>>>>> d8392c60f90cd0692175ef836d813cc337aefa23
